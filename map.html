@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Carte – Adresse Marrakech</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+    <style>
+        #map {
+            height: 500px;
+            width: 60%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+<h2>Rue Abou Abbas El Sebti, Marrakech</h2>
+
+<div id="map"></div>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const address = "Rue Abou Abbas El Sebti, Marrakech";
+
+    const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(address)}&limit=1`;
+
+    fetch(url, {
+        headers: {
+            "Accept-Language": "fr",
+            "User-Agent": "MapDemo/1.0"
+        }
+    })
+    .then(res => res.json())
+    .then(data => {
+        if (!data.length) {
+            document.getElementById("map").innerHTML = "Adresse introuvable";
+            return;
+        }
+
+        const lat = parseFloat(data[0].lat);
+        const lon = parseFloat(data[0].lon);
+
+        const map = L.map("map").setView([lat, lon], 16);
+
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+            attribution: "&copy; OpenStreetMap contributors"
+        }).addTo(map);
+
+        L.marker([lat, lon])
+            .addTo(map)
+            .bindPopup(`<b>${address}</b>`)
+            .openPopup();
+    })
+    .catch(() => {
+        document.getElementById("map").innerHTML = "Erreur de chargement de la carte";
+    });
+});
+</script>
+
+</body>
+</html>

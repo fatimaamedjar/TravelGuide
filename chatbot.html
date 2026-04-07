@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --primary-color: #7fc142;
+      --secondary-color: #282834;
+      --background-color: #f5f5f5;
+      --chat-bg: #f9f9f9;
+      --user-bubble: #e0eafc;
+      --bot-bubble: #ffffff;
+      --shadow: rgba(0,0,0,0.1);
+      --text-dark: #333333;
+      --text-light: #555555;
+    }
+
+    .chat-container {
+      width: 95%;
+      max-width: 900px;
+      height: 85vh;
+      background: var(--chat-bg);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px var(--shadow);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      font-family: 'Arial';
+      background-color: var(--background-color);
+      color: var(--text-dark);
+      margin: 0 auto; /* utile si jamais display:flex du body est retiré */
+    }
+
+
+    .chat-container .header {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .chat-container .header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .chat-container .header h1 i {
+      font-size: 1.5rem;
+    }
+
+    .chat-container .header p {
+      margin: 5px 0 0;
+      opacity: 0.9;
+      font-size: 0.9rem;
+    }
+
+    .chat-container .chat-messages {
+      flex-grow: 1;
+      padding: 20px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      background-size: cover;
+      background-position: center;
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120"><path d="M30,60 C40,50 80,50 90,60" stroke="rgba(201,160,89,0.05)" fill="none" stroke-width="1"/></svg>');
+    }
+
+    .chat-container .message {
+      max-width: 80%;
+      padding: 15px;
+      border-radius: 18px;
+      position: relative;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .chat-container .user-message {
+      background: var(--user-bubble);
+      margin-left: auto;
+      border-bottom-right-radius: 5px;
+      color: var(--text-dark);
+      box-shadow: 2px 2px 8px var(--shadow);
+    }
+
+    .chat-container .bot-message {
+      background: var(--bot-bubble);
+      margin-right: auto;
+      border-bottom-left-radius: 5px;
+      box-shadow: -2px 2px 8px var(--shadow);
+    }
+
+    .chat-container .bot-message::before {
+      content: "";
+      position: absolute;
+      left: -10px;
+      top: 12px;
+      width: 0;
+      height: 0;
+      border-top: 7px solid transparent;
+      border-right: 10px solid var(--bot-bubble);
+      border-bottom: 7px solid transparent;
+    }
+
+    .chat-container .user-message::before {
+      content: "";
+      position: absolute;
+      right: -10px;
+      top: 12px;
+      width: 0;
+      height: 0;
+      border-top: 7px solid transparent;
+      border-left: 10px solid var(--user-bubble);
+      border-bottom: 7px solid transparent;
+    }
+
+    .chat-container .typing-indicator {
+      background: var(--bot-bubble);
+      padding: 15px;
+      border-radius: 18px;
+      width: 70px;
+      display: flex;
+      justify-content: space-around;
+      margin-left: -10px;
+      visibility: hidden;
+      box-shadow: -2px 2px 8px var(--shadow);
+    }
+
+    .chat-container .typing-indicator.active {
+      visibility: visible;
+    }
+
+    .chat-container .typing-dot {
+      width: 8px;
+      height: 8px;
+      background-color: var(--primary-color);
+      border-radius: 50%;
+    }
+
+    .chat-container .input-container {
+      display: flex;
+      padding: 20px;
+      border-top: 1px solid rgba(0,0,0,0.08);
+      background: white;
+      gap: 10px;
+    }
+
+    .chat-container input {
+      flex-grow: 1;
+      padding: 15px 20px;
+      border: 1px solid #ddd;
+      border-radius: 30px;
+      font-size: 1rem;
+      transition: border-color 0.3s;
+    }
+
+    .chat-container input:focus {
+      outline: none;
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 2px rgba(201,160,89,0.2);
+    }
+
+    .chat-container .send-button {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: none;
+      background: var(--primary-color);
+      color: white;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+    }
+
+    .chat-container .send-button:active {
+      transform: scale(0.95);
+      box-shadow: 0 2px 10px #7fc142;
+    }
+
+    .chat-container .ai-indicator {
+      text-align: right;
+      margin-top: 5px;
+      font-size: 0.7rem;
+      color: var(--text-light);
+    }
+
+    .chat-container .launch-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: all 0.3s;
+      z-index: 100;
+    }
+
+    .chat-container .launch-btn i {
+      font-size: 1.8rem;
+    }
+
+    .rtr-btn{
+      text-decoration: none;
+      color: white;
+      background-color: #7fc142;
+      font-weight: bold;
+      font-family: 'Arial';
+      padding: 15px 20px;
+      position: sticky;
+      top: 20px;
+      left: 20px;
+      border-radius: 10px;
+    }
+    .rtr-btn i{
+      margin-right: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <a class="rtr-btn" href="index.php"><i class="fa-solid fa-arrow-left"></i>Retour à l'acceuil</a>
+  <div class="chat-container">
+    <div class="chat-messages" id="chat-messages">
+      <div class="message bot-message">
+        Bonjour ! Je suis votre assistant pour TravelGuide. Comment puis-je vous aider ?
+      </div>
+    </div>
+    
+    <div class="input-container">
+      <input type="text" id="user-input" placeholder="Tapez votre message ici..." autocomplete="off">
+      <button class="send-button" id="send-btn">
+        <i class="fas fa-paper-plane"></i>
+      </button>
+    </div>
+  </div>
+
+  <script src="cb/script.js"></script>
+</body>
+</html>
