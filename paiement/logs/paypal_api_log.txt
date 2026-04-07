@@ -1,0 +1,1684 @@
+[2025-06-11 18:05:48] API Call (/v1/oauth2/token) - HTTP 200 - Response: Array
+(
+    [scope] => https://uri.paypal.com/services/invoicing https://uri.paypal.com/services/checkout/one-click-with-merchant-issued-token https://uri.paypal.com/services/payments/futurepayments https://uri.paypal.com/services/vault/payment-tokens/read https://uri.paypal.com/services/disputes/read-buyer https://uri.paypal.com/services/payments/realtimepayment https://uri.paypal.com/services/subscriptions/confirm-payment https://api.paypal.com/v1/vault/credit-card https://api.paypal.com/v1/payments/.* https://uri.paypal.com/services/vault/payment-tokens/readwrite https://uri.paypal.com/services/applications/webhooks https://uri.paypal.com/services/pricing/exchange-currency/read https://uri.paypal.com/services/disputes/update-seller https://uri.paypal.com/services/payments/payment/authcapture openid Braintree:Vault https://uri.paypal.com/services/disputes/read-seller https://uri.paypal.com/services/payments/refund https://uri.paypal.com/services/pricing/quote-exchange-rates/read https://uri.paypal.com/services/documents/disputes/download https://uri.paypal.com/services/billing-agreements https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.* https://uri.paypal.com/services/shipping/trackers/readwrite https://uri.paypal.com/services/subscriptions
+    [access_token] => A21AAJX-x_wkuMushw09jXsn7fDNaaR37eYUHWCQlzdCiPnAxO7fAViVKvrl9twFj58LBFcU5xuKFvgGi_8D2D_mtK3zAOTNA
+    [token_type] => Bearer
+    [app_id] => APP-8WE50077YF054422B
+    [expires_in] => 32400
+    [nonce] => 2025-06-11T18:05:48ZCm2Qr9L7kdyx-v2sUdADUapiEJAEPfjN5o0bl7AXvbk
+)
+
+[2025-06-11 18:05:50] API Call (/v2/checkout/orders) - HTTP 201 - Response: Array
+(
+    [id] => 7RM44582HM786772X
+    [status] => CREATED
+    [links] => Array
+        (
+            [0] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/7RM44582HM786772X
+                    [rel] => self
+                    [method] => GET
+                )
+
+            [1] => Array
+                (
+                    [href] => https://www.sandbox.paypal.com/checkoutnow?token=7RM44582HM786772X
+                    [rel] => approve
+                    [method] => GET
+                )
+
+            [2] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/7RM44582HM786772X
+                    [rel] => update
+                    [method] => PATCH
+                )
+
+            [3] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/7RM44582HM786772X/capture
+                    [rel] => capture
+                    [method] => POST
+                )
+
+        )
+
+)
+
+[2025-06-11 18:21:31] API Call (/v1/oauth2/token) - HTTP 200 - Response: Array
+(
+    [scope] => https://uri.paypal.com/services/invoicing https://uri.paypal.com/services/checkout/one-click-with-merchant-issued-token https://uri.paypal.com/services/payments/futurepayments https://uri.paypal.com/services/vault/payment-tokens/read https://uri.paypal.com/services/disputes/read-buyer https://uri.paypal.com/services/payments/realtimepayment https://uri.paypal.com/services/subscriptions/confirm-payment https://api.paypal.com/v1/vault/credit-card https://api.paypal.com/v1/payments/.* https://uri.paypal.com/services/vault/payment-tokens/readwrite https://uri.paypal.com/services/applications/webhooks https://uri.paypal.com/services/pricing/exchange-currency/read https://uri.paypal.com/services/disputes/update-seller https://uri.paypal.com/services/payments/payment/authcapture openid Braintree:Vault https://uri.paypal.com/services/disputes/read-seller https://uri.paypal.com/services/payments/refund https://uri.paypal.com/services/pricing/quote-exchange-rates/read https://uri.paypal.com/services/documents/disputes/download https://uri.paypal.com/services/billing-agreements https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.* https://uri.paypal.com/services/shipping/trackers/readwrite https://uri.paypal.com/services/subscriptions
+    [access_token] => A21AAJX-x_wkuMushw09jXsn7fDNaaR37eYUHWCQlzdCiPnAxO7fAViVKvrl9twFj58LBFcU5xuKFvgGi_8D2D_mtK3zAOTNA
+    [token_type] => Bearer
+    [app_id] => APP-8WE50077YF054422B
+    [expires_in] => 31457
+    [nonce] => 2025-06-11T18:05:48ZCm2Qr9L7kdyx-v2sUdADUapiEJAEPfjN5o0bl7AXvbk
+)
+
+[2025-06-11 18:21:32] API Call (/v2/checkout/orders) - HTTP 201 - Response: Array
+(
+    [id] => 0MD65422VB162072V
+    [status] => CREATED
+    [links] => Array
+        (
+            [0] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/0MD65422VB162072V
+                    [rel] => self
+                    [method] => GET
+                )
+
+            [1] => Array
+                (
+                    [href] => https://www.sandbox.paypal.com/checkoutnow?token=0MD65422VB162072V
+                    [rel] => approve
+                    [method] => GET
+                )
+
+            [2] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/0MD65422VB162072V
+                    [rel] => update
+                    [method] => PATCH
+                )
+
+            [3] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/0MD65422VB162072V/capture
+                    [rel] => capture
+                    [method] => POST
+                )
+
+        )
+
+)
+
+[2025-06-11 18:22:16] API Call (/v1/oauth2/token) - HTTP 200 - Response: Array
+(
+    [scope] => https://uri.paypal.com/services/invoicing https://uri.paypal.com/services/checkout/one-click-with-merchant-issued-token https://uri.paypal.com/services/payments/futurepayments https://uri.paypal.com/services/vault/payment-tokens/read https://uri.paypal.com/services/disputes/read-buyer https://uri.paypal.com/services/payments/realtimepayment https://uri.paypal.com/services/subscriptions/confirm-payment https://api.paypal.com/v1/vault/credit-card https://api.paypal.com/v1/payments/.* https://uri.paypal.com/services/vault/payment-tokens/readwrite https://uri.paypal.com/services/applications/webhooks https://uri.paypal.com/services/pricing/exchange-currency/read https://uri.paypal.com/services/disputes/update-seller https://uri.paypal.com/services/payments/payment/authcapture openid Braintree:Vault https://uri.paypal.com/services/disputes/read-seller https://uri.paypal.com/services/payments/refund https://uri.paypal.com/services/pricing/quote-exchange-rates/read https://uri.paypal.com/services/documents/disputes/download https://uri.paypal.com/services/billing-agreements https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.* https://uri.paypal.com/services/shipping/trackers/readwrite https://uri.paypal.com/services/subscriptions
+    [access_token] => A21AAJX-x_wkuMushw09jXsn7fDNaaR37eYUHWCQlzdCiPnAxO7fAViVKvrl9twFj58LBFcU5xuKFvgGi_8D2D_mtK3zAOTNA
+    [token_type] => Bearer
+    [app_id] => APP-8WE50077YF054422B
+    [expires_in] => 31412
+    [nonce] => 2025-06-11T18:05:48ZCm2Qr9L7kdyx-v2sUdADUapiEJAEPfjN5o0bl7AXvbk
+)
+
+[2025-06-11 18:22:18] API Call (/v2/checkout/orders/0MD65422VB162072V/capture) - HTTP 201 - Response: Array
+(
+    [id] => 0MD65422VB162072V
+    [status] => COMPLETED
+    [payment_source] => Array
+        (
+            [paypal] => Array
+                (
+                    [email_address] => sarabennani@gmail.com
+                    [account_id] => 72BWMBRWG4Y3C
+                    [account_status] => VERIFIED
+                    [name] => Array
+                        (
+                            [given_name] => John
+                            [surname] => Doe
+                        )
+
+                    [address] => Array
+                        (
+                            [country_code] => MA
+                        )
+
+                )
+
+        )
+
+    [purchase_units] => Array
+        (
+            [0] => Array
+                (
+                    [reference_id] => RESERVATION_1
+                    [payments] => Array
+                        (
+                            [captures] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 2AW24674S5316333G
+                                            [status] => COMPLETED
+                                            [amount] => Array
+                                                (
+                                                    [currency_code] => EUR
+                                                    [value] => 1700.00
+                                                )
+
+                                            [final_capture] => 1
+                                            [seller_protection] => Array
+                                                (
+                                                    [status] => ELIGIBLE
+                                                    [dispute_categories] => Array
+                                                        (
+                                                            [0] => ITEM_NOT_RECEIVED
+                                                            [1] => UNAUTHORIZED_TRANSACTION
+                                                        )
+
+                                                )
+
+                                            [seller_receivable_breakdown] => Array
+                                                (
+                                                    [gross_amount] => Array
+                                                        (
+                                                            [currency_code] => EUR
+                                                            [value] => 1700.00
+                                                        )
+
+                                                    [paypal_fee] => Array
+                                                        (
+                                                            [currency_code] => EUR
+                                                            [value] => 83.65
+                                                        )
+
+                                                    [net_amount] => Array
+                                                        (
+                                                            [currency_code] => EUR
+                                                            [value] => 1616.35
+                                                        )
+
+                                                    [receivable_amount] => Array
+                                                        (
+                                                            [currency_code] => USD
+                                                            [value] => 1792.18
+                                                        )
+
+                                                    [exchange_rate] => Array
+                                                        (
+                                                            [source_currency] => EUR
+                                                            [target_currency] => USD
+                                                            [value] => 1.108782609128653
+                                                        )
+
+                                                )
+
+                                            [links] => Array
+                                                (
+                                                    [0] => Array
+                                                        (
+                                                            [href] => https://api.sandbox.paypal.com/v2/payments/captures/2AW24674S5316333G
+                                                            [rel] => self
+                                                            [method] => GET
+                                                        )
+
+                                                    [1] => Array
+                                                        (
+                                                            [href] => https://api.sandbox.paypal.com/v2/payments/captures/2AW24674S5316333G/refund
+                                                            [rel] => refund
+                                                            [method] => POST
+                                                        )
+
+                                                    [2] => Array
+                                                        (
+                                                            [href] => https://api.sandbox.paypal.com/v2/checkout/orders/0MD65422VB162072V
+                                                            [rel] => up
+                                                            [method] => GET
+                                                        )
+
+                                                )
+
+                                            [create_time] => 2025-06-11T18:22:17Z
+                                            [update_time] => 2025-06-11T18:22:17Z
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [payer] => Array
+        (
+            [name] => Array
+                (
+                    [given_name] => John
+                    [surname] => Doe
+                )
+
+            [email_address] => sarabennani@gmail.com
+            [payer_id] => 72BWMBRWG4Y3C
+            [address] => Array
+                (
+                    [country_code] => MA
+                )
+
+        )
+
+    [links] => Array
+        (
+            [0] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/0MD65422VB162072V
+                    [rel] => self
+                    [method] => GET
+                )
+
+        )
+
+)
+
+[2025-06-12 16:11:31] API Call (/v1/oauth2/token) - HTTP 200 - Response: Array
+(
+    [scope] => https://uri.paypal.com/services/invoicing https://uri.paypal.com/services/checkout/one-click-with-merchant-issued-token https://uri.paypal.com/services/payments/futurepayments https://uri.paypal.com/services/vault/payment-tokens/read https://uri.paypal.com/services/disputes/read-buyer https://uri.paypal.com/services/payments/realtimepayment https://uri.paypal.com/services/subscriptions/confirm-payment https://api.paypal.com/v1/vault/credit-card https://api.paypal.com/v1/payments/.* https://uri.paypal.com/services/vault/payment-tokens/readwrite https://uri.paypal.com/services/applications/webhooks https://uri.paypal.com/services/pricing/exchange-currency/read https://uri.paypal.com/services/disputes/update-seller https://uri.paypal.com/services/payments/payment/authcapture openid Braintree:Vault https://uri.paypal.com/services/disputes/read-seller https://uri.paypal.com/services/payments/refund https://uri.paypal.com/services/pricing/quote-exchange-rates/read https://uri.paypal.com/services/documents/disputes/download https://uri.paypal.com/services/billing-agreements https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.* https://uri.paypal.com/services/shipping/trackers/readwrite https://uri.paypal.com/services/subscriptions
+    [access_token] => A21AALWmCEapS3erVYOsOLvyITEyywg0_59l7fVv_RUQ-hp-dmPZ9A2cMzj2KFEe0hKw9G0szhKTP_GaEncVlyFb9BuxacroA
+    [token_type] => Bearer
+    [app_id] => APP-8WE50077YF054422B
+    [expires_in] => 32400
+    [nonce] => 2025-06-12T16:11:31Z0d9QEXK3KYt3QdN-Xzj3orzz5AQwbZ7yrxgJi4UA5G4
+)
+
+[2025-06-12 16:11:32] API Call (/v2/checkout/orders) - HTTP 201 - Response: Array
+(
+    [id] => 1YC7180081313334H
+    [status] => CREATED
+    [links] => Array
+        (
+            [0] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/1YC7180081313334H
+                    [rel] => self
+                    [method] => GET
+                )
+
+            [1] => Array
+                (
+                    [href] => https://www.sandbox.paypal.com/checkoutnow?token=1YC7180081313334H
+                    [rel] => approve
+                    [method] => GET
+                )
+
+            [2] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/1YC7180081313334H
+                    [rel] => update
+                    [method] => PATCH
+                )
+
+            [3] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/1YC7180081313334H/capture
+                    [rel] => capture
+                    [method] => POST
+                )
+
+        )
+
+)
+
+[2025-06-12 16:32:21] API Call (/v1/oauth2/token) - HTTP 200 - Response: Array
+(
+    [scope] => https://uri.paypal.com/services/invoicing https://uri.paypal.com/services/checkout/one-click-with-merchant-issued-token https://uri.paypal.com/services/payments/futurepayments https://uri.paypal.com/services/vault/payment-tokens/read https://uri.paypal.com/services/disputes/read-buyer https://uri.paypal.com/services/payments/realtimepayment https://uri.paypal.com/services/subscriptions/confirm-payment https://api.paypal.com/v1/vault/credit-card https://api.paypal.com/v1/payments/.* https://uri.paypal.com/services/vault/payment-tokens/readwrite https://uri.paypal.com/services/applications/webhooks https://uri.paypal.com/services/pricing/exchange-currency/read https://uri.paypal.com/services/disputes/update-seller https://uri.paypal.com/services/payments/payment/authcapture openid Braintree:Vault https://uri.paypal.com/services/disputes/read-seller https://uri.paypal.com/services/payments/refund https://uri.paypal.com/services/pricing/quote-exchange-rates/read https://uri.paypal.com/services/documents/disputes/download https://uri.paypal.com/services/billing-agreements https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.* https://uri.paypal.com/services/shipping/trackers/readwrite https://uri.paypal.com/services/subscriptions
+    [access_token] => A21AALWmCEapS3erVYOsOLvyITEyywg0_59l7fVv_RUQ-hp-dmPZ9A2cMzj2KFEe0hKw9G0szhKTP_GaEncVlyFb9BuxacroA
+    [token_type] => Bearer
+    [app_id] => APP-8WE50077YF054422B
+    [expires_in] => 31150
+    [nonce] => 2025-06-12T16:11:31Z0d9QEXK3KYt3QdN-Xzj3orzz5AQwbZ7yrxgJi4UA5G4
+)
+
+[2025-06-12 16:32:22] API Call (/v2/checkout/orders) - HTTP 201 - Response: Array
+(
+    [id] => 71L13943SK990763E
+    [status] => CREATED
+    [links] => Array
+        (
+            [0] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/71L13943SK990763E
+                    [rel] => self
+                    [method] => GET
+                )
+
+            [1] => Array
+                (
+                    [href] => https://www.sandbox.paypal.com/checkoutnow?token=71L13943SK990763E
+                    [rel] => approve
+                    [method] => GET
+                )
+
+            [2] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/71L13943SK990763E
+                    [rel] => update
+                    [method] => PATCH
+                )
+
+            [3] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/71L13943SK990763E/capture
+                    [rel] => capture
+                    [method] => POST
+                )
+
+        )
+
+)
+
+[2025-06-12 16:32:53] API Call (/v1/oauth2/token) - HTTP 200 - Response: Array
+(
+    [scope] => https://uri.paypal.com/services/invoicing https://uri.paypal.com/services/checkout/one-click-with-merchant-issued-token https://uri.paypal.com/services/payments/futurepayments https://uri.paypal.com/services/vault/payment-tokens/read https://uri.paypal.com/services/disputes/read-buyer https://uri.paypal.com/services/payments/realtimepayment https://uri.paypal.com/services/subscriptions/confirm-payment https://api.paypal.com/v1/vault/credit-card https://api.paypal.com/v1/payments/.* https://uri.paypal.com/services/vault/payment-tokens/readwrite https://uri.paypal.com/services/applications/webhooks https://uri.paypal.com/services/pricing/exchange-currency/read https://uri.paypal.com/services/disputes/update-seller https://uri.paypal.com/services/payments/payment/authcapture openid Braintree:Vault https://uri.paypal.com/services/disputes/read-seller https://uri.paypal.com/services/payments/refund https://uri.paypal.com/services/pricing/quote-exchange-rates/read https://uri.paypal.com/services/documents/disputes/download https://uri.paypal.com/services/billing-agreements https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.* https://uri.paypal.com/services/shipping/trackers/readwrite https://uri.paypal.com/services/subscriptions
+    [access_token] => A21AALWmCEapS3erVYOsOLvyITEyywg0_59l7fVv_RUQ-hp-dmPZ9A2cMzj2KFEe0hKw9G0szhKTP_GaEncVlyFb9BuxacroA
+    [token_type] => Bearer
+    [app_id] => APP-8WE50077YF054422B
+    [expires_in] => 31118
+    [nonce] => 2025-06-12T16:11:31Z0d9QEXK3KYt3QdN-Xzj3orzz5AQwbZ7yrxgJi4UA5G4
+)
+
+[2025-06-12 16:32:55] API Call (/v2/checkout/orders/71L13943SK990763E/capture) - HTTP 201 - Response: Array
+(
+    [id] => 71L13943SK990763E
+    [status] => COMPLETED
+    [payment_source] => Array
+        (
+            [paypal] => Array
+                (
+                    [email_address] => amedjarfatima@gmail.com
+                    [account_id] => 72BWMBRWG4Y3C
+                    [account_status] => VERIFIED
+                    [name] => Array
+                        (
+                            [given_name] => Fatima
+                            [surname] => Amedjar
+                        )
+
+                    [address] => Array
+                        (
+                            [country_code] => MA
+                        )
+
+                )
+
+        )
+
+    [purchase_units] => Array
+        (
+            [0] => Array
+                (
+                    [reference_id] => RESERVATION_6
+                    [payments] => Array
+                        (
+                            [captures] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 1F4756017R4157000
+                                            [status] => COMPLETED
+                                            [amount] => Array
+                                                (
+                                                    [currency_code] => EUR
+                                                    [value] => 4000.00
+                                                )
+
+                                            [final_capture] => 1
+                                            [seller_protection] => Array
+                                                (
+                                                    [status] => ELIGIBLE
+                                                    [dispute_categories] => Array
+                                                        (
+                                                            [0] => ITEM_NOT_RECEIVED
+                                                            [1] => UNAUTHORIZED_TRANSACTION
+                                                        )
+
+                                                )
+
+                                            [seller_receivable_breakdown] => Array
+                                                (
+                                                    [gross_amount] => Array
+                                                        (
+                                                            [currency_code] => EUR
+                                                            [value] => 4000.00
+                                                        )
+
+                                                    [paypal_fee] => Array
+                                                        (
+                                                            [currency_code] => EUR
+                                                            [value] => 196.35
+                                                        )
+
+                                                    [net_amount] => Array
+                                                        (
+                                                            [currency_code] => EUR
+                                                            [value] => 3803.65
+                                                        )
+
+                                                    [receivable_amount] => Array
+                                                        (
+                                                            [currency_code] => USD
+                                                            [value] => 4217.42
+                                                        )
+
+                                                    [exchange_rate] => Array
+                                                        (
+                                                            [source_currency] => EUR
+                                                            [target_currency] => USD
+                                                            [value] => 1.108782609128653
+                                                        )
+
+                                                )
+
+                                            [links] => Array
+                                                (
+                                                    [0] => Array
+                                                        (
+                                                            [href] => https://api.sandbox.paypal.com/v2/payments/captures/1F4756017R4157000
+                                                            [rel] => self
+                                                            [method] => GET
+                                                        )
+
+                                                    [1] => Array
+                                                        (
+                                                            [href] => https://api.sandbox.paypal.com/v2/payments/captures/1F4756017R4157000/refund
+                                                            [rel] => refund
+                                                            [method] => POST
+                                                        )
+
+                                                    [2] => Array
+                                                        (
+                                                            [href] => https://api.sandbox.paypal.com/v2/checkout/orders/71L13943SK990763E
+                                                            [rel] => up
+                                                            [method] => GET
+                                                        )
+
+                                                )
+
+                                            [create_time] => 2025-06-12T16:32:54Z
+                                            [update_time] => 2025-06-12T16:32:54Z
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [payer] => Array
+        (
+            [name] => Array
+                (
+                    [given_name] => Fatima
+                    [surname] => Amedjar
+                )
+
+            [email_address] => amedjarfatima@gmail.com
+            [payer_id] => 72BWMBRWG4Y3C
+            [address] => Array
+                (
+                    [country_code] => MA
+                )
+
+        )
+
+    [links] => Array
+        (
+            [0] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/71L13943SK990763E
+                    [rel] => self
+                    [method] => GET
+                )
+
+        )
+
+)
+
+[2025-06-15 19:59:18] API Call (/v1/oauth2/token) - HTTP 200 - Response: Array
+(
+    [scope] => https://uri.paypal.com/services/invoicing https://uri.paypal.com/services/checkout/one-click-with-merchant-issued-token https://uri.paypal.com/services/payments/futurepayments https://uri.paypal.com/services/vault/payment-tokens/read https://uri.paypal.com/services/disputes/read-buyer https://uri.paypal.com/services/payments/realtimepayment https://uri.paypal.com/services/subscriptions/confirm-payment https://api.paypal.com/v1/vault/credit-card https://api.paypal.com/v1/payments/.* https://uri.paypal.com/services/vault/payment-tokens/readwrite https://uri.paypal.com/services/applications/webhooks https://uri.paypal.com/services/pricing/exchange-currency/read https://uri.paypal.com/services/disputes/update-seller https://uri.paypal.com/services/payments/payment/authcapture openid Braintree:Vault https://uri.paypal.com/services/disputes/read-seller https://uri.paypal.com/services/payments/refund https://uri.paypal.com/services/pricing/quote-exchange-rates/read https://uri.paypal.com/services/documents/disputes/download https://uri.paypal.com/services/billing-agreements https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.* https://uri.paypal.com/services/shipping/trackers/readwrite https://uri.paypal.com/services/subscriptions
+    [access_token] => A21AAJrQizSj_-D1Myr9eIh2uSyqb32LzK2ExCVCFIxLxETAg-4UUaJ2qcdoT2ffJjSeio_-iBZLmKzsn1R-NBrDLy6BrEHwQ
+    [token_type] => Bearer
+    [app_id] => APP-8WE50077YF054422B
+    [expires_in] => 32400
+    [nonce] => 2025-06-15T19:59:17ZoWU7XfrujW-iZT5-zQUZNH4y12RNosVlD3BsDLRphgM
+)
+
+[2025-06-15 19:59:20] API Call (/v2/checkout/orders) - HTTP 201 - Response: Array
+(
+    [id] => 66886204YX118451R
+    [status] => CREATED
+    [links] => Array
+        (
+            [0] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/66886204YX118451R
+                    [rel] => self
+                    [method] => GET
+                )
+
+            [1] => Array
+                (
+                    [href] => https://www.sandbox.paypal.com/checkoutnow?token=66886204YX118451R
+                    [rel] => approve
+                    [method] => GET
+                )
+
+            [2] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/66886204YX118451R
+                    [rel] => update
+                    [method] => PATCH
+                )
+
+            [3] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/66886204YX118451R/capture
+                    [rel] => capture
+                    [method] => POST
+                )
+
+        )
+
+)
+
+[2025-06-15 20:02:43] API Call (/v1/oauth2/token) - HTTP 200 - Response: Array
+(
+    [scope] => https://uri.paypal.com/services/invoicing https://uri.paypal.com/services/checkout/one-click-with-merchant-issued-token https://uri.paypal.com/services/payments/futurepayments https://uri.paypal.com/services/vault/payment-tokens/read https://uri.paypal.com/services/disputes/read-buyer https://uri.paypal.com/services/payments/realtimepayment https://uri.paypal.com/services/subscriptions/confirm-payment https://api.paypal.com/v1/vault/credit-card https://api.paypal.com/v1/payments/.* https://uri.paypal.com/services/vault/payment-tokens/readwrite https://uri.paypal.com/services/applications/webhooks https://uri.paypal.com/services/pricing/exchange-currency/read https://uri.paypal.com/services/disputes/update-seller https://uri.paypal.com/services/payments/payment/authcapture openid Braintree:Vault https://uri.paypal.com/services/disputes/read-seller https://uri.paypal.com/services/payments/refund https://uri.paypal.com/services/pricing/quote-exchange-rates/read https://uri.paypal.com/services/documents/disputes/download https://uri.paypal.com/services/billing-agreements https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.* https://uri.paypal.com/services/shipping/trackers/readwrite https://uri.paypal.com/services/subscriptions
+    [access_token] => A21AAKsx5UIhc-tcBZARF5L6UxxmyKEE309XxPCa_Y2sEmIecKJt3V6YtqzKYPnaKmb6wmGV362QWkLCwCdw5luwyBpFccWOQ
+    [token_type] => Bearer
+    [app_id] => APP-8WE50077YF054422B
+    [expires_in] => 32400
+    [nonce] => 2025-06-15T20:02:42ZmB0J-f7jsaYQlLcUJ6OvRoDVMXfWZxoERbgNODXurWQ
+)
+
+[2025-06-15 20:02:44] API Call (/v2/checkout/orders) - HTTP 201 - Response: Array
+(
+    [id] => 3X670992E39863702
+    [status] => CREATED
+    [links] => Array
+        (
+            [0] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/3X670992E39863702
+                    [rel] => self
+                    [method] => GET
+                )
+
+            [1] => Array
+                (
+                    [href] => https://www.sandbox.paypal.com/checkoutnow?token=3X670992E39863702
+                    [rel] => approve
+                    [method] => GET
+                )
+
+            [2] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/3X670992E39863702
+                    [rel] => update
+                    [method] => PATCH
+                )
+
+            [3] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/3X670992E39863702/capture
+                    [rel] => capture
+                    [method] => POST
+                )
+
+        )
+
+)
+
+[2025-06-15 20:03:23] API Call (/v1/oauth2/token) - HTTP 200 - Response: Array
+(
+    [scope] => https://uri.paypal.com/services/invoicing https://uri.paypal.com/services/checkout/one-click-with-merchant-issued-token https://uri.paypal.com/services/payments/futurepayments https://uri.paypal.com/services/vault/payment-tokens/read https://uri.paypal.com/services/disputes/read-buyer https://uri.paypal.com/services/payments/realtimepayment https://uri.paypal.com/services/subscriptions/confirm-payment https://api.paypal.com/v1/vault/credit-card https://api.paypal.com/v1/payments/.* https://uri.paypal.com/services/vault/payment-tokens/readwrite https://uri.paypal.com/services/applications/webhooks https://uri.paypal.com/services/pricing/exchange-currency/read https://uri.paypal.com/services/disputes/update-seller https://uri.paypal.com/services/payments/payment/authcapture openid Braintree:Vault https://uri.paypal.com/services/disputes/read-seller https://uri.paypal.com/services/payments/refund https://uri.paypal.com/services/pricing/quote-exchange-rates/read https://uri.paypal.com/services/documents/disputes/download https://uri.paypal.com/services/billing-agreements https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.* https://uri.paypal.com/services/shipping/trackers/readwrite https://uri.paypal.com/services/subscriptions
+    [access_token] => A21AAKsx5UIhc-tcBZARF5L6UxxmyKEE309XxPCa_Y2sEmIecKJt3V6YtqzKYPnaKmb6wmGV362QWkLCwCdw5luwyBpFccWOQ
+    [token_type] => Bearer
+    [app_id] => APP-8WE50077YF054422B
+    [expires_in] => 32360
+    [nonce] => 2025-06-15T20:02:42ZmB0J-f7jsaYQlLcUJ6OvRoDVMXfWZxoERbgNODXurWQ
+)
+
+[2025-06-15 20:03:25] API Call (/v2/checkout/orders/3X670992E39863702/capture) - HTTP 201 - Response: Array
+(
+    [id] => 3X670992E39863702
+    [status] => COMPLETED
+    [payment_source] => Array
+        (
+            [paypal] => Array
+                (
+                    [email_address] => amedjarfatima@gmail.com
+                    [account_id] => 72BWMBRWG4Y3C
+                    [account_status] => VERIFIED
+                    [name] => Array
+                        (
+                            [given_name] => Fatima
+                            [surname] => Amedjar
+                        )
+
+                    [address] => Array
+                        (
+                            [country_code] => MA
+                        )
+
+                )
+
+        )
+
+    [purchase_units] => Array
+        (
+            [0] => Array
+                (
+                    [reference_id] => RESERVATION_7
+                    [payments] => Array
+                        (
+                            [captures] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 60L79650LL948925R
+                                            [status] => COMPLETED
+                                            [amount] => Array
+                                                (
+                                                    [currency_code] => EUR
+                                                    [value] => 2000.00
+                                                )
+
+                                            [final_capture] => 1
+                                            [seller_protection] => Array
+                                                (
+                                                    [status] => ELIGIBLE
+                                                    [dispute_categories] => Array
+                                                        (
+                                                            [0] => ITEM_NOT_RECEIVED
+                                                            [1] => UNAUTHORIZED_TRANSACTION
+                                                        )
+
+                                                )
+
+                                            [seller_receivable_breakdown] => Array
+                                                (
+                                                    [gross_amount] => Array
+                                                        (
+                                                            [currency_code] => EUR
+                                                            [value] => 2000.00
+                                                        )
+
+                                                    [paypal_fee] => Array
+                                                        (
+                                                            [currency_code] => EUR
+                                                            [value] => 98.35
+                                                        )
+
+                                                    [net_amount] => Array
+                                                        (
+                                                            [currency_code] => EUR
+                                                            [value] => 1901.65
+                                                        )
+
+                                                    [receivable_amount] => Array
+                                                        (
+                                                            [currency_code] => USD
+                                                            [value] => 2108.52
+                                                        )
+
+                                                    [exchange_rate] => Array
+                                                        (
+                                                            [source_currency] => EUR
+                                                            [target_currency] => USD
+                                                            [value] => 1.108782609128653
+                                                        )
+
+                                                )
+
+                                            [links] => Array
+                                                (
+                                                    [0] => Array
+                                                        (
+                                                            [href] => https://api.sandbox.paypal.com/v2/payments/captures/60L79650LL948925R
+                                                            [rel] => self
+                                                            [method] => GET
+                                                        )
+
+                                                    [1] => Array
+                                                        (
+                                                            [href] => https://api.sandbox.paypal.com/v2/payments/captures/60L79650LL948925R/refund
+                                                            [rel] => refund
+                                                            [method] => POST
+                                                        )
+
+                                                    [2] => Array
+                                                        (
+                                                            [href] => https://api.sandbox.paypal.com/v2/checkout/orders/3X670992E39863702
+                                                            [rel] => up
+                                                            [method] => GET
+                                                        )
+
+                                                )
+
+                                            [create_time] => 2025-06-15T20:03:23Z
+                                            [update_time] => 2025-06-15T20:03:23Z
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [payer] => Array
+        (
+            [name] => Array
+                (
+                    [given_name] => Fatima
+                    [surname] => Amedjar
+                )
+
+            [email_address] => amedjarfatima@gmail.com
+            [payer_id] => 72BWMBRWG4Y3C
+            [address] => Array
+                (
+                    [country_code] => MA
+                )
+
+        )
+
+    [links] => Array
+        (
+            [0] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/3X670992E39863702
+                    [rel] => self
+                    [method] => GET
+                )
+
+        )
+
+)
+
+[2025-06-16 04:34:43] API Call (/v1/oauth2/token) - HTTP 200 - Response: Array
+(
+    [scope] => https://uri.paypal.com/services/invoicing https://uri.paypal.com/services/checkout/one-click-with-merchant-issued-token https://uri.paypal.com/services/payments/futurepayments https://uri.paypal.com/services/vault/payment-tokens/read https://uri.paypal.com/services/disputes/read-buyer https://uri.paypal.com/services/payments/realtimepayment https://uri.paypal.com/services/subscriptions/confirm-payment https://api.paypal.com/v1/vault/credit-card https://api.paypal.com/v1/payments/.* https://uri.paypal.com/services/vault/payment-tokens/readwrite https://uri.paypal.com/services/applications/webhooks https://uri.paypal.com/services/pricing/exchange-currency/read https://uri.paypal.com/services/disputes/update-seller https://uri.paypal.com/services/payments/payment/authcapture openid Braintree:Vault https://uri.paypal.com/services/disputes/read-seller https://uri.paypal.com/services/payments/refund https://uri.paypal.com/services/pricing/quote-exchange-rates/read https://uri.paypal.com/services/documents/disputes/download https://uri.paypal.com/services/billing-agreements https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.* https://uri.paypal.com/services/shipping/trackers/readwrite https://uri.paypal.com/services/subscriptions
+    [access_token] => A21AAKVbasklPIP_oLDgdIYYQQnyFNu6azKxNo9GN-aBkPDubMhyRbeND76wp5ew9-saSW6a1q6MYRUPqxVjipxvQ50ckAcPQ
+    [token_type] => Bearer
+    [app_id] => APP-8WE50077YF054422B
+    [expires_in] => 32400
+    [nonce] => 2025-06-16T04:34:42ZcdKAyD9ICJbMXtoejO15bcicCFK0GJzvXb-BDgqfsJ8
+)
+
+[2025-06-16 04:34:44] API Call (/v2/checkout/orders) - HTTP 201 - Response: Array
+(
+    [id] => 86235976KD184232S
+    [status] => CREATED
+    [links] => Array
+        (
+            [0] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/86235976KD184232S
+                    [rel] => self
+                    [method] => GET
+                )
+
+            [1] => Array
+                (
+                    [href] => https://www.sandbox.paypal.com/checkoutnow?token=86235976KD184232S
+                    [rel] => approve
+                    [method] => GET
+                )
+
+            [2] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/86235976KD184232S
+                    [rel] => update
+                    [method] => PATCH
+                )
+
+            [3] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/86235976KD184232S/capture
+                    [rel] => capture
+                    [method] => POST
+                )
+
+        )
+
+)
+
+[2025-06-16 04:36:17] API Call (/v1/oauth2/token) - HTTP 200 - Response: Array
+(
+    [scope] => https://uri.paypal.com/services/invoicing https://uri.paypal.com/services/checkout/one-click-with-merchant-issued-token https://uri.paypal.com/services/payments/futurepayments https://uri.paypal.com/services/vault/payment-tokens/read https://uri.paypal.com/services/disputes/read-buyer https://uri.paypal.com/services/payments/realtimepayment https://uri.paypal.com/services/subscriptions/confirm-payment https://api.paypal.com/v1/vault/credit-card https://api.paypal.com/v1/payments/.* https://uri.paypal.com/services/vault/payment-tokens/readwrite https://uri.paypal.com/services/applications/webhooks https://uri.paypal.com/services/pricing/exchange-currency/read https://uri.paypal.com/services/disputes/update-seller https://uri.paypal.com/services/payments/payment/authcapture openid Braintree:Vault https://uri.paypal.com/services/disputes/read-seller https://uri.paypal.com/services/payments/refund https://uri.paypal.com/services/pricing/quote-exchange-rates/read https://uri.paypal.com/services/documents/disputes/download https://uri.paypal.com/services/billing-agreements https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.* https://uri.paypal.com/services/shipping/trackers/readwrite https://uri.paypal.com/services/subscriptions
+    [access_token] => A21AAKVbasklPIP_oLDgdIYYQQnyFNu6azKxNo9GN-aBkPDubMhyRbeND76wp5ew9-saSW6a1q6MYRUPqxVjipxvQ50ckAcPQ
+    [token_type] => Bearer
+    [app_id] => APP-8WE50077YF054422B
+    [expires_in] => 32305
+    [nonce] => 2025-06-16T04:34:42ZcdKAyD9ICJbMXtoejO15bcicCFK0GJzvXb-BDgqfsJ8
+)
+
+[2025-06-16 04:36:19] API Call (/v2/checkout/orders/86235976KD184232S/capture) - HTTP 201 - Response: Array
+(
+    [id] => 86235976KD184232S
+    [status] => COMPLETED
+    [payment_source] => Array
+        (
+            [paypal] => Array
+                (
+                    [email_address] => amedjarfatima@gmail.com
+                    [account_id] => 72BWMBRWG4Y3C
+                    [account_status] => VERIFIED
+                    [name] => Array
+                        (
+                            [given_name] => Fatima
+                            [surname] => Amedjar
+                        )
+
+                    [address] => Array
+                        (
+                            [country_code] => MA
+                        )
+
+                )
+
+        )
+
+    [purchase_units] => Array
+        (
+            [0] => Array
+                (
+                    [reference_id] => RESERVATION_8
+                    [payments] => Array
+                        (
+                            [captures] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 04E738668X715522N
+                                            [status] => COMPLETED
+                                            [amount] => Array
+                                                (
+                                                    [currency_code] => EUR
+                                                    [value] => 600.00
+                                                )
+
+                                            [final_capture] => 1
+                                            [seller_protection] => Array
+                                                (
+                                                    [status] => ELIGIBLE
+                                                    [dispute_categories] => Array
+                                                        (
+                                                            [0] => ITEM_NOT_RECEIVED
+                                                            [1] => UNAUTHORIZED_TRANSACTION
+                                                        )
+
+                                                )
+
+                                            [seller_receivable_breakdown] => Array
+                                                (
+                                                    [gross_amount] => Array
+                                                        (
+                                                            [currency_code] => EUR
+                                                            [value] => 600.00
+                                                        )
+
+                                                    [paypal_fee] => Array
+                                                        (
+                                                            [currency_code] => EUR
+                                                            [value] => 29.75
+                                                        )
+
+                                                    [net_amount] => Array
+                                                        (
+                                                            [currency_code] => EUR
+                                                            [value] => 570.25
+                                                        )
+
+                                                    [receivable_amount] => Array
+                                                        (
+                                                            [currency_code] => USD
+                                                            [value] => 632.28
+                                                        )
+
+                                                    [exchange_rate] => Array
+                                                        (
+                                                            [source_currency] => EUR
+                                                            [target_currency] => USD
+                                                            [value] => 1.108782609128653
+                                                        )
+
+                                                )
+
+                                            [links] => Array
+                                                (
+                                                    [0] => Array
+                                                        (
+                                                            [href] => https://api.sandbox.paypal.com/v2/payments/captures/04E738668X715522N
+                                                            [rel] => self
+                                                            [method] => GET
+                                                        )
+
+                                                    [1] => Array
+                                                        (
+                                                            [href] => https://api.sandbox.paypal.com/v2/payments/captures/04E738668X715522N/refund
+                                                            [rel] => refund
+                                                            [method] => POST
+                                                        )
+
+                                                    [2] => Array
+                                                        (
+                                                            [href] => https://api.sandbox.paypal.com/v2/checkout/orders/86235976KD184232S
+                                                            [rel] => up
+                                                            [method] => GET
+                                                        )
+
+                                                )
+
+                                            [create_time] => 2025-06-16T04:36:18Z
+                                            [update_time] => 2025-06-16T04:36:18Z
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [payer] => Array
+        (
+            [name] => Array
+                (
+                    [given_name] => Fatima
+                    [surname] => Amedjar
+                )
+
+            [email_address] => amedjarfatima@gmail.com
+            [payer_id] => 72BWMBRWG4Y3C
+            [address] => Array
+                (
+                    [country_code] => MA
+                )
+
+        )
+
+    [links] => Array
+        (
+            [0] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/86235976KD184232S
+                    [rel] => self
+                    [method] => GET
+                )
+
+        )
+
+)
+
+[2025-06-18 02:53:33] API Call (/v1/oauth2/token) - HTTP 200 - Response: Array
+(
+    [scope] => https://uri.paypal.com/services/invoicing https://uri.paypal.com/services/checkout/one-click-with-merchant-issued-token https://uri.paypal.com/services/payments/futurepayments https://uri.paypal.com/services/vault/payment-tokens/read https://uri.paypal.com/services/disputes/read-buyer https://uri.paypal.com/services/payments/realtimepayment https://uri.paypal.com/services/subscriptions/confirm-payment https://api.paypal.com/v1/vault/credit-card https://api.paypal.com/v1/payments/.* https://uri.paypal.com/services/vault/payment-tokens/readwrite https://uri.paypal.com/services/applications/webhooks https://uri.paypal.com/services/pricing/exchange-currency/read https://uri.paypal.com/services/disputes/update-seller https://uri.paypal.com/services/payments/payment/authcapture openid Braintree:Vault https://uri.paypal.com/services/disputes/read-seller https://uri.paypal.com/services/payments/refund https://uri.paypal.com/services/pricing/quote-exchange-rates/read https://uri.paypal.com/services/documents/disputes/download https://uri.paypal.com/services/billing-agreements https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.* https://uri.paypal.com/services/shipping/trackers/readwrite https://uri.paypal.com/services/subscriptions
+    [access_token] => A21AAIgqwm-p5XLwGpfC2B2sBpnhKuBaT4K4uZQMf0A4yIQgUKvZl20QnNoSmRkikJ8TdMy1iIZO9d2mGzoELVSIIXERVPYPA
+    [token_type] => Bearer
+    [app_id] => APP-8WE50077YF054422B
+    [expires_in] => 32400
+    [nonce] => 2025-06-18T02:53:32ZdNQw_gumQ0LSx6eUpNUC8yRDAyzn5nJXKex_tz9OwJ8
+)
+
+[2025-06-18 02:53:34] API Call (/v2/checkout/orders) - HTTP 201 - Response: Array
+(
+    [id] => 2CG43679W0472994N
+    [status] => CREATED
+    [links] => Array
+        (
+            [0] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/2CG43679W0472994N
+                    [rel] => self
+                    [method] => GET
+                )
+
+            [1] => Array
+                (
+                    [href] => https://www.sandbox.paypal.com/checkoutnow?token=2CG43679W0472994N
+                    [rel] => approve
+                    [method] => GET
+                )
+
+            [2] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/2CG43679W0472994N
+                    [rel] => update
+                    [method] => PATCH
+                )
+
+            [3] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/2CG43679W0472994N/capture
+                    [rel] => capture
+                    [method] => POST
+                )
+
+        )
+
+)
+
+[2025-06-18 02:53:57] API Call (/v1/oauth2/token) - HTTP 200 - Response: Array
+(
+    [scope] => https://uri.paypal.com/services/invoicing https://uri.paypal.com/services/checkout/one-click-with-merchant-issued-token https://uri.paypal.com/services/payments/futurepayments https://uri.paypal.com/services/vault/payment-tokens/read https://uri.paypal.com/services/disputes/read-buyer https://uri.paypal.com/services/payments/realtimepayment https://uri.paypal.com/services/subscriptions/confirm-payment https://api.paypal.com/v1/vault/credit-card https://api.paypal.com/v1/payments/.* https://uri.paypal.com/services/vault/payment-tokens/readwrite https://uri.paypal.com/services/applications/webhooks https://uri.paypal.com/services/pricing/exchange-currency/read https://uri.paypal.com/services/disputes/update-seller https://uri.paypal.com/services/payments/payment/authcapture openid Braintree:Vault https://uri.paypal.com/services/disputes/read-seller https://uri.paypal.com/services/payments/refund https://uri.paypal.com/services/pricing/quote-exchange-rates/read https://uri.paypal.com/services/documents/disputes/download https://uri.paypal.com/services/billing-agreements https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.* https://uri.paypal.com/services/shipping/trackers/readwrite https://uri.paypal.com/services/subscriptions
+    [access_token] => A21AAIgqwm-p5XLwGpfC2B2sBpnhKuBaT4K4uZQMf0A4yIQgUKvZl20QnNoSmRkikJ8TdMy1iIZO9d2mGzoELVSIIXERVPYPA
+    [token_type] => Bearer
+    [app_id] => APP-8WE50077YF054422B
+    [expires_in] => 32375
+    [nonce] => 2025-06-18T02:53:32ZdNQw_gumQ0LSx6eUpNUC8yRDAyzn5nJXKex_tz9OwJ8
+)
+
+[2025-06-18 02:53:59] API Call (/v2/checkout/orders/2CG43679W0472994N/capture) - HTTP 201 - Response: Array
+(
+    [id] => 2CG43679W0472994N
+    [status] => COMPLETED
+    [payment_source] => Array
+        (
+            [paypal] => Array
+                (
+                    [email_address] => amedjarfatima@gmail.com
+                    [account_id] => 72BWMBRWG4Y3C
+                    [account_status] => VERIFIED
+                    [name] => Array
+                        (
+                            [given_name] => Fatima
+                            [surname] => Amedjar
+                        )
+
+                    [address] => Array
+                        (
+                            [country_code] => MA
+                        )
+
+                )
+
+        )
+
+    [purchase_units] => Array
+        (
+            [0] => Array
+                (
+                    [reference_id] => RESERVATION_9
+                    [payments] => Array
+                        (
+                            [captures] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 9UN04350BX579654U
+                                            [status] => COMPLETED
+                                            [amount] => Array
+                                                (
+                                                    [currency_code] => EUR
+                                                    [value] => 300.00
+                                                )
+
+                                            [final_capture] => 1
+                                            [seller_protection] => Array
+                                                (
+                                                    [status] => ELIGIBLE
+                                                    [dispute_categories] => Array
+                                                        (
+                                                            [0] => ITEM_NOT_RECEIVED
+                                                            [1] => UNAUTHORIZED_TRANSACTION
+                                                        )
+
+                                                )
+
+                                            [seller_receivable_breakdown] => Array
+                                                (
+                                                    [gross_amount] => Array
+                                                        (
+                                                            [currency_code] => EUR
+                                                            [value] => 300.00
+                                                        )
+
+                                                    [paypal_fee] => Array
+                                                        (
+                                                            [currency_code] => EUR
+                                                            [value] => 15.05
+                                                        )
+
+                                                    [net_amount] => Array
+                                                        (
+                                                            [currency_code] => EUR
+                                                            [value] => 284.95
+                                                        )
+
+                                                    [receivable_amount] => Array
+                                                        (
+                                                            [currency_code] => USD
+                                                            [value] => 319.17
+                                                        )
+
+                                                    [exchange_rate] => Array
+                                                        (
+                                                            [source_currency] => EUR
+                                                            [target_currency] => USD
+                                                            [value] => 1.120092867632598
+                                                        )
+
+                                                )
+
+                                            [links] => Array
+                                                (
+                                                    [0] => Array
+                                                        (
+                                                            [href] => https://api.sandbox.paypal.com/v2/payments/captures/9UN04350BX579654U
+                                                            [rel] => self
+                                                            [method] => GET
+                                                        )
+
+                                                    [1] => Array
+                                                        (
+                                                            [href] => https://api.sandbox.paypal.com/v2/payments/captures/9UN04350BX579654U/refund
+                                                            [rel] => refund
+                                                            [method] => POST
+                                                        )
+
+                                                    [2] => Array
+                                                        (
+                                                            [href] => https://api.sandbox.paypal.com/v2/checkout/orders/2CG43679W0472994N
+                                                            [rel] => up
+                                                            [method] => GET
+                                                        )
+
+                                                )
+
+                                            [create_time] => 2025-06-18T02:53:58Z
+                                            [update_time] => 2025-06-18T02:53:58Z
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [payer] => Array
+        (
+            [name] => Array
+                (
+                    [given_name] => Fatima
+                    [surname] => Amedjar
+                )
+
+            [email_address] => amedjarfatima@gmail.com
+            [payer_id] => 72BWMBRWG4Y3C
+            [address] => Array
+                (
+                    [country_code] => MA
+                )
+
+        )
+
+    [links] => Array
+        (
+            [0] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/2CG43679W0472994N
+                    [rel] => self
+                    [method] => GET
+                )
+
+        )
+
+)
+
+[2025-06-18 03:02:08] API Call (/v1/oauth2/token) - HTTP 200 - Response: Array
+(
+    [scope] => https://uri.paypal.com/services/invoicing https://uri.paypal.com/services/checkout/one-click-with-merchant-issued-token https://uri.paypal.com/services/payments/futurepayments https://uri.paypal.com/services/vault/payment-tokens/read https://uri.paypal.com/services/disputes/read-buyer https://uri.paypal.com/services/payments/realtimepayment https://uri.paypal.com/services/subscriptions/confirm-payment https://api.paypal.com/v1/vault/credit-card https://api.paypal.com/v1/payments/.* https://uri.paypal.com/services/vault/payment-tokens/readwrite https://uri.paypal.com/services/applications/webhooks https://uri.paypal.com/services/pricing/exchange-currency/read https://uri.paypal.com/services/disputes/update-seller https://uri.paypal.com/services/payments/payment/authcapture openid Braintree:Vault https://uri.paypal.com/services/disputes/read-seller https://uri.paypal.com/services/payments/refund https://uri.paypal.com/services/pricing/quote-exchange-rates/read https://uri.paypal.com/services/documents/disputes/download https://uri.paypal.com/services/billing-agreements https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.* https://uri.paypal.com/services/shipping/trackers/readwrite https://uri.paypal.com/services/subscriptions
+    [access_token] => A21AAKSKdlEn7BLBMzsutuBXf2pzWrIYHvt_IeLx6ueRXmAcopgfQgDUJ8yTSSrlWpaAVRt76wZDUXIIIf8mxwmXa-YbpbdgA
+    [token_type] => Bearer
+    [app_id] => APP-8WE50077YF054422B
+    [expires_in] => 32400
+    [nonce] => 2025-06-18T03:02:08ZKmhftzaewRlRimVvjbfFMTp2xARn1eUq3E5ftOsEi4Q
+)
+
+[2025-06-18 03:02:09] API Call (/v2/checkout/orders) - HTTP 201 - Response: Array
+(
+    [id] => 8XP99795BN7141119
+    [status] => CREATED
+    [links] => Array
+        (
+            [0] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/8XP99795BN7141119
+                    [rel] => self
+                    [method] => GET
+                )
+
+            [1] => Array
+                (
+                    [href] => https://www.sandbox.paypal.com/checkoutnow?token=8XP99795BN7141119
+                    [rel] => approve
+                    [method] => GET
+                )
+
+            [2] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/8XP99795BN7141119
+                    [rel] => update
+                    [method] => PATCH
+                )
+
+            [3] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/8XP99795BN7141119/capture
+                    [rel] => capture
+                    [method] => POST
+                )
+
+        )
+
+)
+
+[2025-06-18 03:02:28] API Call (/v1/oauth2/token) - HTTP 200 - Response: Array
+(
+    [scope] => https://uri.paypal.com/services/invoicing https://uri.paypal.com/services/checkout/one-click-with-merchant-issued-token https://uri.paypal.com/services/payments/futurepayments https://uri.paypal.com/services/vault/payment-tokens/read https://uri.paypal.com/services/disputes/read-buyer https://uri.paypal.com/services/payments/realtimepayment https://uri.paypal.com/services/subscriptions/confirm-payment https://api.paypal.com/v1/vault/credit-card https://api.paypal.com/v1/payments/.* https://uri.paypal.com/services/vault/payment-tokens/readwrite https://uri.paypal.com/services/applications/webhooks https://uri.paypal.com/services/pricing/exchange-currency/read https://uri.paypal.com/services/disputes/update-seller https://uri.paypal.com/services/payments/payment/authcapture openid Braintree:Vault https://uri.paypal.com/services/disputes/read-seller https://uri.paypal.com/services/payments/refund https://uri.paypal.com/services/pricing/quote-exchange-rates/read https://uri.paypal.com/services/documents/disputes/download https://uri.paypal.com/services/billing-agreements https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.* https://uri.paypal.com/services/shipping/trackers/readwrite https://uri.paypal.com/services/subscriptions
+    [access_token] => A21AAKSKdlEn7BLBMzsutuBXf2pzWrIYHvt_IeLx6ueRXmAcopgfQgDUJ8yTSSrlWpaAVRt76wZDUXIIIf8mxwmXa-YbpbdgA
+    [token_type] => Bearer
+    [app_id] => APP-8WE50077YF054422B
+    [expires_in] => 32380
+    [nonce] => 2025-06-18T03:02:08ZKmhftzaewRlRimVvjbfFMTp2xARn1eUq3E5ftOsEi4Q
+)
+
+[2025-06-18 03:02:30] API Call (/v2/checkout/orders/8XP99795BN7141119/capture) - HTTP 201 - Response: Array
+(
+    [id] => 8XP99795BN7141119
+    [status] => COMPLETED
+    [payment_source] => Array
+        (
+            [paypal] => Array
+                (
+                    [email_address] => amedjarfatima@gmail.com
+                    [account_id] => 72BWMBRWG4Y3C
+                    [account_status] => VERIFIED
+                    [name] => Array
+                        (
+                            [given_name] => Fatima
+                            [surname] => Amedjar
+                        )
+
+                    [address] => Array
+                        (
+                            [country_code] => MA
+                        )
+
+                )
+
+        )
+
+    [purchase_units] => Array
+        (
+            [0] => Array
+                (
+                    [reference_id] => RESERVATION_10
+                    [payments] => Array
+                        (
+                            [captures] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 2HY36501FL9379817
+                                            [status] => COMPLETED
+                                            [amount] => Array
+                                                (
+                                                    [currency_code] => EUR
+                                                    [value] => 5000.00
+                                                )
+
+                                            [final_capture] => 1
+                                            [seller_protection] => Array
+                                                (
+                                                    [status] => ELIGIBLE
+                                                    [dispute_categories] => Array
+                                                        (
+                                                            [0] => ITEM_NOT_RECEIVED
+                                                            [1] => UNAUTHORIZED_TRANSACTION
+                                                        )
+
+                                                )
+
+                                            [seller_receivable_breakdown] => Array
+                                                (
+                                                    [gross_amount] => Array
+                                                        (
+                                                            [currency_code] => EUR
+                                                            [value] => 5000.00
+                                                        )
+
+                                                    [paypal_fee] => Array
+                                                        (
+                                                            [currency_code] => EUR
+                                                            [value] => 245.35
+                                                        )
+
+                                                    [net_amount] => Array
+                                                        (
+                                                            [currency_code] => EUR
+                                                            [value] => 4754.65
+                                                        )
+
+                                                    [receivable_amount] => Array
+                                                        (
+                                                            [currency_code] => USD
+                                                            [value] => 5325.65
+                                                        )
+
+                                                    [exchange_rate] => Array
+                                                        (
+                                                            [source_currency] => EUR
+                                                            [target_currency] => USD
+                                                            [value] => 1.120092867632598
+                                                        )
+
+                                                )
+
+                                            [links] => Array
+                                                (
+                                                    [0] => Array
+                                                        (
+                                                            [href] => https://api.sandbox.paypal.com/v2/payments/captures/2HY36501FL9379817
+                                                            [rel] => self
+                                                            [method] => GET
+                                                        )
+
+                                                    [1] => Array
+                                                        (
+                                                            [href] => https://api.sandbox.paypal.com/v2/payments/captures/2HY36501FL9379817/refund
+                                                            [rel] => refund
+                                                            [method] => POST
+                                                        )
+
+                                                    [2] => Array
+                                                        (
+                                                            [href] => https://api.sandbox.paypal.com/v2/checkout/orders/8XP99795BN7141119
+                                                            [rel] => up
+                                                            [method] => GET
+                                                        )
+
+                                                )
+
+                                            [create_time] => 2025-06-18T03:02:29Z
+                                            [update_time] => 2025-06-18T03:02:29Z
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [payer] => Array
+        (
+            [name] => Array
+                (
+                    [given_name] => Fatima
+                    [surname] => Amedjar
+                )
+
+            [email_address] => amedjarfatima@gmail.com
+            [payer_id] => 72BWMBRWG4Y3C
+            [address] => Array
+                (
+                    [country_code] => MA
+                )
+
+        )
+
+    [links] => Array
+        (
+            [0] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/8XP99795BN7141119
+                    [rel] => self
+                    [method] => GET
+                )
+
+        )
+
+)
+
+[2025-06-18 11:53:54] API Call (/v1/oauth2/token) - HTTP 200 - Response: Array
+(
+    [scope] => https://uri.paypal.com/services/invoicing https://uri.paypal.com/services/checkout/one-click-with-merchant-issued-token https://uri.paypal.com/services/payments/futurepayments https://uri.paypal.com/services/vault/payment-tokens/read https://uri.paypal.com/services/disputes/read-buyer https://uri.paypal.com/services/payments/realtimepayment https://uri.paypal.com/services/subscriptions/confirm-payment https://api.paypal.com/v1/vault/credit-card https://api.paypal.com/v1/payments/.* https://uri.paypal.com/services/vault/payment-tokens/readwrite https://uri.paypal.com/services/applications/webhooks https://uri.paypal.com/services/pricing/exchange-currency/read https://uri.paypal.com/services/disputes/update-seller https://uri.paypal.com/services/payments/payment/authcapture openid Braintree:Vault https://uri.paypal.com/services/disputes/read-seller https://uri.paypal.com/services/payments/refund https://uri.paypal.com/services/pricing/quote-exchange-rates/read https://uri.paypal.com/services/documents/disputes/download https://uri.paypal.com/services/billing-agreements https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.* https://uri.paypal.com/services/shipping/trackers/readwrite https://uri.paypal.com/services/subscriptions
+    [access_token] => A21AAJfRSR2pPTLwEcGTNYFCto5Rs2eRmp629aJf6TQ6HaFHA7Wfw1RRgTesGtuivPxPTOyC1_KyAro1xOMrh_rfMG_bBCT0A
+    [token_type] => Bearer
+    [app_id] => APP-8WE50077YF054422B
+    [expires_in] => 32399
+    [nonce] => 2025-06-18T11:53:53ZjhNLC4WlhO0HpUvuimpfzN1KuqF3svaNkhhCUiOmRiA
+)
+
+[2025-06-18 11:53:56] API Call (/v2/checkout/orders) - HTTP 201 - Response: Array
+(
+    [id] => 0GV75310GN5343415
+    [status] => CREATED
+    [links] => Array
+        (
+            [0] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/0GV75310GN5343415
+                    [rel] => self
+                    [method] => GET
+                )
+
+            [1] => Array
+                (
+                    [href] => https://www.sandbox.paypal.com/checkoutnow?token=0GV75310GN5343415
+                    [rel] => approve
+                    [method] => GET
+                )
+
+            [2] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/0GV75310GN5343415
+                    [rel] => update
+                    [method] => PATCH
+                )
+
+            [3] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/0GV75310GN5343415/capture
+                    [rel] => capture
+                    [method] => POST
+                )
+
+        )
+
+)
+
+[2025-06-18 11:54:45] API Call (/v1/oauth2/token) - HTTP 200 - Response: Array
+(
+    [scope] => https://uri.paypal.com/services/invoicing https://uri.paypal.com/services/checkout/one-click-with-merchant-issued-token https://uri.paypal.com/services/payments/futurepayments https://uri.paypal.com/services/vault/payment-tokens/read https://uri.paypal.com/services/disputes/read-buyer https://uri.paypal.com/services/payments/realtimepayment https://uri.paypal.com/services/subscriptions/confirm-payment https://api.paypal.com/v1/vault/credit-card https://api.paypal.com/v1/payments/.* https://uri.paypal.com/services/vault/payment-tokens/readwrite https://uri.paypal.com/services/applications/webhooks https://uri.paypal.com/services/pricing/exchange-currency/read https://uri.paypal.com/services/disputes/update-seller https://uri.paypal.com/services/payments/payment/authcapture openid Braintree:Vault https://uri.paypal.com/services/disputes/read-seller https://uri.paypal.com/services/payments/refund https://uri.paypal.com/services/pricing/quote-exchange-rates/read https://uri.paypal.com/services/documents/disputes/download https://uri.paypal.com/services/billing-agreements https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.* https://uri.paypal.com/services/shipping/trackers/readwrite https://uri.paypal.com/services/subscriptions
+    [access_token] => A21AAJfRSR2pPTLwEcGTNYFCto5Rs2eRmp629aJf6TQ6HaFHA7Wfw1RRgTesGtuivPxPTOyC1_KyAro1xOMrh_rfMG_bBCT0A
+    [token_type] => Bearer
+    [app_id] => APP-8WE50077YF054422B
+    [expires_in] => 32349
+    [nonce] => 2025-06-18T11:53:53ZjhNLC4WlhO0HpUvuimpfzN1KuqF3svaNkhhCUiOmRiA
+)
+
+[2025-06-18 11:54:47] API Call (/v2/checkout/orders/0GV75310GN5343415/capture) - HTTP 201 - Response: Array
+(
+    [id] => 0GV75310GN5343415
+    [status] => COMPLETED
+    [payment_source] => Array
+        (
+            [paypal] => Array
+                (
+                    [email_address] => amedjarfatima@gmail.com
+                    [account_id] => 72BWMBRWG4Y3C
+                    [account_status] => VERIFIED
+                    [name] => Array
+                        (
+                            [given_name] => Fatima
+                            [surname] => Amedjar
+                        )
+
+                    [address] => Array
+                        (
+                            [country_code] => MA
+                        )
+
+                )
+
+        )
+
+    [purchase_units] => Array
+        (
+            [0] => Array
+                (
+                    [reference_id] => RESERVATION_11
+                    [payments] => Array
+                        (
+                            [captures] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 8EA08244HD572593D
+                                            [status] => COMPLETED
+                                            [amount] => Array
+                                                (
+                                                    [currency_code] => EUR
+                                                    [value] => 300.00
+                                                )
+
+                                            [final_capture] => 1
+                                            [seller_protection] => Array
+                                                (
+                                                    [status] => ELIGIBLE
+                                                    [dispute_categories] => Array
+                                                        (
+                                                            [0] => ITEM_NOT_RECEIVED
+                                                            [1] => UNAUTHORIZED_TRANSACTION
+                                                        )
+
+                                                )
+
+                                            [seller_receivable_breakdown] => Array
+                                                (
+                                                    [gross_amount] => Array
+                                                        (
+                                                            [currency_code] => EUR
+                                                            [value] => 300.00
+                                                        )
+
+                                                    [paypal_fee] => Array
+                                                        (
+                                                            [currency_code] => EUR
+                                                            [value] => 15.05
+                                                        )
+
+                                                    [net_amount] => Array
+                                                        (
+                                                            [currency_code] => EUR
+                                                            [value] => 284.95
+                                                        )
+
+                                                    [receivable_amount] => Array
+                                                        (
+                                                            [currency_code] => USD
+                                                            [value] => 318.78
+                                                        )
+
+                                                    [exchange_rate] => Array
+                                                        (
+                                                            [source_currency] => EUR
+                                                            [target_currency] => USD
+                                                            [value] => 1.118727836293352
+                                                        )
+
+                                                )
+
+                                            [links] => Array
+                                                (
+                                                    [0] => Array
+                                                        (
+                                                            [href] => https://api.sandbox.paypal.com/v2/payments/captures/8EA08244HD572593D
+                                                            [rel] => self
+                                                            [method] => GET
+                                                        )
+
+                                                    [1] => Array
+                                                        (
+                                                            [href] => https://api.sandbox.paypal.com/v2/payments/captures/8EA08244HD572593D/refund
+                                                            [rel] => refund
+                                                            [method] => POST
+                                                        )
+
+                                                    [2] => Array
+                                                        (
+                                                            [href] => https://api.sandbox.paypal.com/v2/checkout/orders/0GV75310GN5343415
+                                                            [rel] => up
+                                                            [method] => GET
+                                                        )
+
+                                                )
+
+                                            [create_time] => 2025-06-18T11:54:46Z
+                                            [update_time] => 2025-06-18T11:54:46Z
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [payer] => Array
+        (
+            [name] => Array
+                (
+                    [given_name] => Fatima
+                    [surname] => Amedjar
+                )
+
+            [email_address] => amedjarfatima@gmail.com
+            [payer_id] => 72BWMBRWG4Y3C
+            [address] => Array
+                (
+                    [country_code] => MA
+                )
+
+        )
+
+    [links] => Array
+        (
+            [0] => Array
+                (
+                    [href] => https://api.sandbox.paypal.com/v2/checkout/orders/0GV75310GN5343415
+                    [rel] => self
+                    [method] => GET
+                )
+
+        )
+
+)
+
+[2026-01-10 09:51:35] cURL Error (/v1/oauth2/token): SSL certificate problem: unable to get local issuer certificate
+[2026-01-10 09:51:35] Failed to get Access Token. Response: Array
+(
+    [error] => SSL certificate problem: unable to get local issuer certificate
+    [http_code] => 0
+)
+
+[2026-01-18 15:15:47] cURL Error (/v1/oauth2/token): SSL certificate problem: unable to get local issuer certificate
+[2026-01-18 15:15:47] Failed to get Access Token. Response: Array
+(
+    [error] => SSL certificate problem: unable to get local issuer certificate
+    [http_code] => 0
+)
+
+[2026-01-18 15:16:07] cURL Error (/v1/oauth2/token): SSL certificate problem: unable to get local issuer certificate
+[2026-01-18 15:16:07] Failed to get Access Token. Response: Array
+(
+    [error] => SSL certificate problem: unable to get local issuer certificate
+    [http_code] => 0
+)
+
