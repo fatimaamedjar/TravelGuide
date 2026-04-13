@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    .site-header * {
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      outline: none;
+      border: none;
+      transition: 0.5s linear;
+    }
+
+    .site-header a {
+      text-decoration: none;
+    }
+
+    .site-header {
+      scroll-behavior: smooth;
+      scroll-padding-top: 6rem;
+      overflow-x: hidden;
+    }
+
+    .site-header .header {
+      background-color: #fff;
+      padding: 2rem 9%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 10;
+    }
+
+    .site-header .navBar a {
+      font-size: 1.2rem;
+      padding: 0 1.5rem;
+      color: #282834;
+    }
+
+    .site-header .navBar a:hover,
+    .site-header .icones a:hover {
+      color: #7fc142;
+    }
+
+    .site-header .icones a {
+      font-size: 1.2rem;
+      margin-left: 1.5rem;
+      color: #282834;
+    }
+
+    .site-header #toggler {
+      display: none;
+    }
+
+    .site-header .fa-bars {
+      font-size: 1.2rem;
+      color: #282834;
+      padding: 1rem;
+      cursor: pointer;
+      display: none;
+    }
+
+    .site-header .header img {
+      width: 200px;
+    }
+
+    @media(max-width: 991px) {
+      .site-header .header {
+        padding: 2rem;
+      }
+    }
+
+    @media(max-width: 768px) {
+      .site-header .fa-bars {
+        display: block;
+      }
+
+      .site-header .navBar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #7fc142;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      }
+
+      .site-header #toggler:checked ~ .navBar {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+
+      .site-header .navBar a {
+        margin: 1.5rem;
+        padding: 1.5rem;
+        display: block;
+        text-align: center;
+        color: #fff;
+      }
+
+      .site-header .navBar a:hover {
+        background-color: #fff;
+        color: #7fc142;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="site-header">
+    <div class="header">
+      <input type="checkbox" id="toggler">
+      <label for="toggler" class="fas fa-bars"></label>
+
+      <a href="index.php">
+        <img src="./images/logo/TG_logo_hor.png" alt="Logo TravelGuide">
+      </a>
+
+      <nav class="navBar">
+        <a href="nos_hotels.php">Hôtels</a>
+        <!--<a href="nos_activites.php">Activités</a>-->
+        <a href="contact.php">Contact</a>
+      </nav>
+
+      <div class="icones">
+        <a href="profile.php" class="fas fa-user"></a>
+        <a href="favoris.php" class="fas fa-heart"></a>
+        <a href="reservations.php" class="fas fa-clock"></a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

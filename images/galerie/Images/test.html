@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Nos Services</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    body {
+      background: #1a2732;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .services-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 32px;
+      padding: 60px 0;
+    }
+    .service-card {
+      background: #f5f7fa;
+      border-radius: 18px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      padding: 32px 24px;
+      width: 260px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .service-card:hover {
+      transform: translateY(-6px) scale(1.03);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+    }
+    .service-card i {
+      font-size: 2.5rem;
+      color: #1a2732;
+      margin-bottom: 18px;
+    }
+    .service-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #1a2732;
+    }
+    .service-desc {
+      font-size: 1rem;
+      color: #4a4a4a;
+      opacity: 0.85;
+    }
+    @media (max-width: 900px) {
+      .services-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="services-container">
+    <div class="service-card">
+      <i class="fa-solid fa-bell-concierge"></i>
+      <div class="service-title">Room Service 24/24</div>
+      <div class="service-desc">Profitez d’un service de chambre disponible à toute heure, pour un séjour tout confort.</div>
+    </div>
+    <div class="service-card">
+      <i class="fa-solid fa-headset"></i>
+      <div class="service-title">SAV et Support</div>
+      <div class="service-desc">Notre équipe reste disponible pour répondre à vos besoins et demandes à tout moment.</div>
+    </div>
+    <div class="service-card">
+      <i class="fa-solid fa-user-md"></i>
+      <div class="service-title">Médecin Sur Site</div>
+      <div class="service-desc">Consultation rapide et efficace en cas d’urgence médicale, 24h/24.</div>
+    </div>
+    <div class="service-card">
+      <i class="fa-solid fa-snowflake"></i>
+      <div class="service-title">Eaux Réfrigérées</div>
+      <div class="service-desc">Profitez de boissons fraîches et d’eaux réfrigérées dans votre chambre à tout moment.</div>
+    </div>
+  </div>
+</body>
+</html>

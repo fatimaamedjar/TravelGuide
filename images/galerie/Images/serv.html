@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Services</title>
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8; /* Fond très légèrement gris */
+            margin: 0;
+            padding: 0; /* Retirer le padding du body */
+            display: flex;
+            flex-direction: column; /* Empiler les sections verticalement */
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .header-section {
+            width: 100%;
+            max-width: 1200px; /* Aligner avec le conteneur de cartes */
+            padding: 60px 20px 40px 20px; /* Espacement interne */
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between; /* Aligne le texte à gauche et le bouton à droite */
+            align-items: flex-end; /* Aligne le bouton avec le bas du texte */
+            flex-wrap: wrap; /* Permet aux éléments de passer à la ligne sur petits écrans */
+        }
+
+        .header-text {
+            max-width: 70%; /* Limite la largeur du texte */
+        }
+
+        .header-text .subtitle {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .header-text .main-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #333;
+            line-height: 1.2;
+            margin-bottom: 0;
+        }
+
+        .header-button {
+            margin-top: 20px; /* Espace au-dessus du bouton sur petits écrans */
+        }
+
+        .header-button .view-all-btn {
+            background-color: #4a90e2; /* Couleur bleue du bouton */
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 25px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none; /* Enlève le soulignement pour un lien */
+            display: inline-block; /* Permet d'appliquer padding et margin */
+        }
+
+        .header-button .view-all-btn:hover {
+            background-color: #357ABD; /* Bleu plus foncé au survol */
+        }
+
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            max-width: 1200px;
+            padding: 0 20px 60px 20px; /* Ajouter du padding en bas */
+            box-sizing: border-box;
+        }
+
+        .service-card {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-content {
+            padding: 20px;
+            position: relative;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-icon-box {
+            background-color: #4a90e2;
+            width: 50px;
+            height: 50px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: -25px;
+            left: 20px;
+            color: #fff;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .card-description {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.5;
+            flex-grow: 1;
+        }
+
+        .read-more {
+            font-size: 0.95rem;
+            color: #4a90e2;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .read-more i {
+            margin-left: 5px;
+            transition: margin-left 0.3s ease;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+
+        .read-more:hover i {
+            margin-left: 10px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-section {
+                flex-direction: column; /* Empile le texte et le bouton */
+                align-items: flex-start; /* Aligne tout à gauche */
+            }
+
+            .header-text {
+                max-width: 100%; /* Le texte prend toute la largeur */
+                margin-bottom: 20px; /* Espace entre le texte et le bouton */
+            }
+
+            .header-text .main-title {
+                font-size: 2rem; /* Taille de titre plus petite sur mobile */
+            }
+
+             .header-button {
+                margin-top: 0; /* Annule la marge ajoutée pour les petits écrans */
+                width: 100%; /* Le bouton prend toute la largeur */
+                text-align: center; /* Centre le bouton si nécessaire */
+            }
+            .header-button .view-all-btn {
+                 width: 100%; /* Le bouton prend toute la largeur */
+                 box-sizing: border-box; /* Inclure padding dans la largeur */
+            }
+        }
+
+
+        @media (max-width: 650px) {
+            .cards-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .service-card {
+                width: 90%;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-section">
+        <div class="header-text">
+            <div class="subtitle">About Us</div>
+            <h2 class="main-title">We Solve IT Problems<br>With Technology</h2>
+        </div>
+        <div class="header-button">
+            <a href="#" class="view-all-btn">VIEW OUR ALL SERVICES <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+
+    <div class="cards-container">
+        <!-- Carte 1 -->
+        <div class="service-card">
+            <img src="images (1).jpg" alt="IT Consultancy" class="card-image"> <!-- Remplacez par vos images -->
+            <div class="card-content">
+                <div class="card-icon-box">
+                    <i class="fas fa-laptop-code"></i> <!-- Icône Font Awesome -->
+                </div>
+                <div class="card-title">IT Consultancy</div>
+                <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- Carte 2 -->
+        <div class="service-card">
+            <img src="images (2).jpg" alt="App Development" class="card-image"> <!-- Remplacez par vos images -->
+            <div class="card-content">
+                 <div class="card-icon-box">
+                    <i class="fas fa-mobile-alt"></i> <!-- Icône Font Awesome -->
+                </div>
+                <div class="card-title">App Development</div>
+                <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- Carte 3 -->
+        <div class="service-card">
+            <img src="images (3).jpg" alt="Data Analysis" class="card-image"> <!-- Remplacez par vos images -->
+            <div class="card-content">
+                 <div class="card-icon-box">
+                    <i class="fas fa-chart-bar"></i> <!-- Icône Font Awesome -->
+                </div>
+                <div class="card-title">Data Analysis</div>
+                <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- Carte 4 -->
+        <div class="service-card">
+            <img src="images.jpg" alt="Database Security" class="card-image"> <!-- Remplacez par vos images -->
+            <div class="card-content">
+                 <div class="card-icon-box">
+                    <i class="fas fa-database"></i> <!-- Icône Font Awesome -->
+                </div>
+                <div class="card-title">Database Security</div>
+                <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
